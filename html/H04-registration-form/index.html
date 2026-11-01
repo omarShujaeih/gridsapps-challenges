@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Internship Application | Grids Apps</title>
+  <meta name="description" content="Grids Apps internship application form.">
+</head>
+<body>
+
+  <header>
+    <h1>Grids Apps Internship Application</h1>
+    <p>Fill in the form below to apply for the Full Stack Web Development Internship.</p>
+  </header>
+
+  <main>
+    <form action="/apply" method="post">
+
+      <fieldset>
+        <legend>Personal Information</legend>
+
+        <label for="firstName">First Name</label>
+        <input id="firstName" name="firstName" type="text" required>
+
+        <label for="lastName">Last Name</label>
+        <input id="lastName" name="lastName" type="text" required>
+
+        <label for="birthdate">Date of Birth</label>
+        <input id="birthdate" name="birthdate" type="date" required>
+
+        <fieldset>
+          <legend>Gender</legend>
+          <input type="radio" id="genderMale" name="gender" value="male" required>
+          <label for="genderMale">Male</label>
+
+          <input type="radio" id="genderFemale" name="gender" value="female">
+          <label for="genderFemale">Female</label>
+        </fieldset>
+      </fieldset>
+
+      <fieldset>
+        <legend>Contact Details</legend>
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" required>
+
+        <label for="phone">Phone</label>
+        <input id="phone" name="phone" type="tel" pattern="[0-9+\s-]{7,15}" required>
+
+        <label for="country">Country</label>
+        <select id="country" name="country" required>
+          <option value="">-- Select --</option>
+          <option value="PS">Palestine</option>
+          <option value="JO">Jordan</option>
+          <option value="other">Other</option>
+        </select>
+
+        <label for="city">City</label>
+        <input id="city" name="city" type="text" required>
+      </fieldset>
+
+      <fieldset>
+        <legend>Education</legend>
+
+        <label for="university">University</label>
+        <input id="university" name="university" type="text" required>
+
+        <label for="major">Major</label>
+        <input id="major" name="major" type="text" required>
+
+        <label for="gradYear">Expected Graduation Year</label>
+        <input id="gradYear" name="gradYear" type="number" min="2026" max="2032" required>
+      </fieldset>
+
+      <fieldset>
+        <legend>Skills &amp; Experience</legend>
+
+        <p>Which of these have you used? (select all that apply)</p>
+        <input type="checkbox" id="skillHtml" name="skills" value="html">
+        <label for="skillHtml">HTML/CSS</label>
+
+        <input type="checkbox" id="skillJs" name="skills" value="js">
+        <label for="skillJs">JavaScript</label>
+
+        <input type="checkbox" id="skillGit" name="skills" value="git">
+        <label for="skillGit">Git/GitHub</label>
+
+        <label for="portfolio">Portfolio or GitHub URL</label>
+        <input id="portfolio" name="portfolio" type="url" placeholder="https://github.com/your-username">
+
+        <label for="resume">Upload Resume (PDF)</label>
+        <input id="resume" name="resume" type="file" accept=".pdf" required>
+      </fieldset>
+
+      <fieldset>
+        <legend>Application</legend>
+
+        <label for="motivation">Why do you want to join this internship?</label>
+        <textarea id="motivation" name="motivation" rows="6" minlength="30" required></textarea>
+
+        <label for="password">Create a Password</label>
+        <input id="password" name="password" type="password" minlength="8" required>
+
+        <label for="confirmPassword">Confirm Password</label>
+        <input id="confirmPassword" name="confirmPassword" type="password" minlength="8" required>
+
+        <input type="checkbox" id="terms" name="terms" required>
+        <label for="terms">I agree to the Terms &amp; Conditions</label>
+      </fieldset>
+
+      <button type="submit">Submit Application</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; <time datetime="2026">2026</time> Grids Apps. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
